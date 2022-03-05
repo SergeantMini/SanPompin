@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html       <!doctype html>
+
+    <html lang="en">
+        <head>
+
+            <link rel="icon" href="./imagenes/favicon-sanpompin-01.svg" type="image/x-icon">
+            
+            <meta charset="utf-8">
+            <title>San Pompín</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="estilos.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" />
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+            <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+            <link rel="stylesheet" href="style.css">
+    
+        </head>
+    
+        <body style="overflow-x:hidden;">
+            <div id="fondotopnav" style="background-image:url('./imagenes/degradado-fondoo.jpg');background-repeat: no-repeat;">
+                <style>
+                    @media only screen and (max-width: 499px) {
+                        #fondotopnav{
+                            background-image: url('./imagenes/fondoMovil.svg');
+                            background-size: 500px 400px;
+                        }
+                    }
+                    @media only screen and (min-width: 768px) {
+                        #fondotopnav{
+                            background-image: url('./imagenes/degradado-fondoo.jpg');
+                        }
+                    }
+                </style>
+                <div align="center" id="textologomenu">
+                    <img  onClick="location.href='home.html'" src="./imagenes/Logo_isotipo.svg" style="max-width: 200px;"/>
+                </div>
+                <div class="topnav" id="myTopnav" style="width: 100%; display: flex; justify-content: center;">
+                    <div class="topnav-centered">
+                        <a style="visibility: hidden;" href="#Inicio"></a>
+                        <a href="#Inicio" onClick="location.href='home.html'">Inicio</a>
+                        <a href="#nosotros" onClick="location.href='nosotros.html'">El Santo</a>
+                        <a href="#locales" onClick="location.href='locales.html'">Locales</a>
+                        <a href="#galeria" onClick="location.href='galeria.html'">Galería</a>
+                        <a href="#Contacto" class="active" onClick="location.href='contacto.html'">Contacto</a>
+                        <a href="https://www.instagram.com/sanpompin.tlx/?hl=es-la" target="_blank" style="color:white;">    
+                            @sanpompin.tlx
+                        </a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- responsive top menu -->
+            <script>
+                /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+                function myFunction() {
+                  var x = document.getElementById("myTopnav");
+                  if (x.className === "topnav") {
+                    x.className += " responsive";
+                  } else {
+                    x.className = "topnav";
+                  }
+                }
+            </script>
+
+            <!-- primer header -->
+            <br><br><br>
+
+            <div class="container">
+                <div class="col-sm-5">
+                    <div class="container">
+                        <h1><span style="background-color: #E5BD4399;">CONTÁCTANOS</span></h1>
+                        <h4>NI TANTO QUE BUSQUES AL SANTO,</br> NI TANTO QUE NO LO UBIQUES</h4>
+                        <br>
+                        <form  action="https://formsubmit.co/privacidad.sanpompin@gmail.com" method="POST">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_subject" value="¡Nuevo mensaje para San Pompín!">
+                            <input type="hidden" name="_template" value="box">
+                            <div class="form-group">
+                                <div class="">
+                                    <input type="text" name="Nombre" id="textboxContacto" class="form-control" placeholder="Escribe tu nombre" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="">
+                                    <input type="text" name="Numero" id="textboxContacto" class="form-control" placeholder="Escribe tu número" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Cuéntanos tus dudas" id="textboxContacto" class="form-control" name="Mensaje" rows="10" required></textarea>
+                            </div>
+                            <input type="hidden" name="_next" value="http://sanpompin.com/contacto.html">
+                            <button type="submit" style="float:right;" class="button">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <div class="col-sm-7">
+                    <style>
+                        @media only screen and (max-width: 499px) {
+                            #divmapa{
+                                width:300px;
+                                height:350px;
+                            }
+                        }
+                        @media only screen and (min-width: 768px) {
+                            #divmapa{
+                                width: 600px;
+                                height: 450px;
+                            }
+                        }
+                    </style>
+                    <div class="container" id="divmapa">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.149525758709!2d-98.14699428509375!3d19.405944386899446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfeff6e89787bce05!2zMTnCsDI0JzIxLjQiTiA5OMKwMDgnNDEuMyJX!5e0!3m2!1ses!2smx!4v1642628887489!5m2!1ses!2smx" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+                <br><br>
+                <div>
+                    <h2>REDES SOCIALES</h2>
+                    <a href="https://www.instagram.com/sanpompin.tlx/?hl=es-la" target="_blank">
+                        <button class="button1">Síguenos en Instagram</button>
+                    </a>
+                    <br><br>
+                    <a href="https://www.facebook.com/sanpompin/" target="_blank">
+                        <button class="button2">Síguenos en Facebook</button>
+                    </a>
+                </div>
+            </div>
+
+            
+            <br><br><br>
+            
+            <footer class="container-fluid white py-5" style="background: #53733B;cursor: default;color:white;">
+                <div class="row" style="width:100%">
+                    <div class="col-md-2 pull-md-3">
+                        <div class="container" style="margin-left: 10px;">
+                            <p class="tituloFooter">Menú</p>
+                            <ul style="list-style-type:none;padding-inline-start: 10px;">
+                                <li> <a id="textosfooter" onClick="location.href='home.html'">Inicio</a> </li>
+                                <li> <a id="textosfooter" onClick="location.href='nosotros.html'">El Santo</a> </li>
+                                <li> <a id="textosfooter" onClick="location.href='locales.html'">Locales</a> </li>
+                                <li> <a id="textosfooter" onClick="location.href='galeria.html'">Galería</a> </li>
+                                <li> <a id="textosfooter" onClick="location.href='contacto.html'">Contacto</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pull-md-7">
+                        <div class="container">
+                            <p class="tituloFooter">Compañía</p>
+                            <ul style="list-style-type:none;padding-inline-start: 10px;">
+                                <li> <a id="textosfooter" onClick="location.href='TerminosYCondiciones.html'">Términos y condiciones</a> </li>
+                                <li> <a id="textosfooter" onClick="location.href='TerminosYCondiciones.html'">Aviso de privacidad</a> </li>
+                                <br>
+                                <li style="cursor: pointer;"> <img style="max-width:30px;" src="./imagenes/i-instagram.svg" onclick="window.open('https://www.instagram.com/sanpompin.tlx/?hl=es-la', '_blank');"/> <img style="max-width:30px;margin-left: 10px;" src="./imagenes/i_Facebook.svg" onclick="window.open('https://www.facebook.com/sanpompin/', '_blank');"/></li>
+                            </ul>
+                            <table>
+                                <tr>
+                                    <th>
+                                        <div class="container">
+                                           
+                                        </div>
+                                    </th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-7 push-md-2">
+                        <div class="container"align="right" style="float: right;">
+                            <img style="max-width:250px;" src="./imagenes/i_logotipo blanco.svg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="container" align="right">
+                    <p class="textofooterdeux">© 2022 San Pompin. Todos los derechos reservados. Diseñado por <a href="http://designdeux.com/" target="_blank" style="color:white;text-align: left;">DEUX® Diseño de experiencia</a></p>
+                </div>
+            </footer>
+    </body>

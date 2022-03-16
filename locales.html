@@ -86,64 +86,60 @@
             <div id="headertabs" style="background-color: #F2BF45;text-align: center;">
                 <div class="container" style="padding-top: 2%;padding-bottom: 0%;">
                     <h1 style="color: white;font-size: 30px;font-weight: 700;">EL SANTO ESTÁ LISTO</h1>
-                    <!-- aqui serán tabs-->
-                    <div algin="center" class="tab" style="background-color: transparent;border-color: transparent;color:white;text-align: center;">
-                        <button class="tablinks" onclick="openCity(event, 'London')">Planta baja</button>
-                        <button class="tablinks" onclick="openCity(event, 'Paris')">Planta alta</button>
-                        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Terraza</button>
-                      </div>
-                      
-                      <script>
-                      function openCity(evt, cityName) {
-                        var i, tabcontent, tablinks;
-                        tabcontent = document.getElementsByClassName("tabcontent");
-                        for (i = 0; i < tabcontent.length; i++) {
-                          tabcontent[i].style.display = "none";
-                        }
-                        tablinks = document.getElementsByClassName("tablinks");
-                        for (i = 0; i < tablinks.length; i++) {
-                          tablinks[i].className = tablinks[i].className.replace(" active", "");
-                        }
-                        document.getElementById(cityName).style.display = "block";
-                        evt.currentTarget.className += " active";
-                      }
-                      </script>
                 </div>
             </div>
-
-            <br><br>
-
-            <div id="London" class="tabcontent">
-                <div>
-                    <div class="container" align="center">
-                        <h1 style="text-align: left; margin-left: 100px;">TODO PA' LLEVAR</h1>
-                        <img class="img-fluid" src="./imagenes/home/mapas/sp_planta baja .svg"/>
-                    </div>
+            
+            <!-- aqui serán tabs-->
+            <div class="tab" style="background-color: #F2BF45;border-color: transparent;color:white;">
+                <div class="container" align="center">
+                    <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Planta Alta</button>
+                    <button class="tablinks" onclick="openCity(event, 'Paris')">Planta Baja</button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Terraza</button>
                 </div>
               </div>
 
+              <br><br>
+              
+              <div id="London" class="tabcontent">
+                <div class="container" align="center">
+                    <h1 style="text-align: left; margin-left: 100px;">TODO PA' LLEVAR</h1>
+                    <img class="img-fluid" src="./imagenes/home/mapas/sp_planta baja .svg"/>
+                </div>
+              </div>
+              
               <div id="Paris" class="tabcontent">
-                  <style>
-                      #headertabs{
-                          background-color: #FD5F08;
-                      }
-                  </style>
-                <div>
-                    <div class="container" align="center">
-                        <h1 style="text-align: left; margin-left: 100px;">PA' COMER AQUÍ</h1>
-                        <img class="img-fluid" src="./imagenes/home/mapas/sp_planta alta.svg"/>
-                    </div>
+                <div class="container" align="center">
+                    <h1 style="text-align: left; margin-left: 100px;">PA' COMER AQUÍ</h1>
+                    
+                    <img class="img-fluid" src="./imagenes/home/mapas/sp_planta alta.svg"/>
                 </div>
               </div>
-
+              
               <div id="Tokyo" class="tabcontent">
-                <div>
-                    <div class="container" align="center">
-                        <h1 style="text-align: left; margin-left: 100px;">PA CONVIVIR Y CONBEBER</h1>
-                        <img class="img-fluid" src="./imagenes/home/mapas/sp_terraza-18.svg"/>
-                    </div>
+                <div class="container" align="center">
+                    <h1 style="text-align: left; margin-left: 100px;">PA CONVIVIR Y CONBEBER</h1>
+                    <img class="img-fluid" src="./imagenes/home/mapas/sp_terraza-18.svg"/>
                 </div>
               </div>
+              
+              <script>
+              function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                  tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                  tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+              }
+              
+              // Get the element with id="defaultOpen" and click on it
+              document.getElementById("defaultOpen").click();
+              </script>
             
             <br><br>
 

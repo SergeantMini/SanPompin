@@ -1,0 +1,284 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html       <!doctype html>
+
+    <html lang="en">
+        <head>
+
+            <link rel="icon" href="./imagenes/favicon-sanpompin-01.svg" type="image/x-icon">
+            
+            <meta charset="utf-8">
+            <title>San Pompín</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="estilos.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" />
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+            <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+            <link rel="stylesheet" href="style.css">
+    
+        </head>
+    
+        <body style="overflow-x:hidden;">
+            <div id="fondotopnav" style="background-image:url('./imagenes/degradado-fondoo.jpg');background-repeat: no-repeat;">
+                <style>
+                    @media only screen and (max-width: 499px) {
+                        #fondotopnav{
+                            background-image: url('./imagenes/fondoMovil.svg');
+                            background-size: 500px 400px;
+                        }
+                    }
+                    @media only screen and (min-width: 768px) {
+                        #fondotopnav{
+                            background-image: url('./imagenes/degradado-fondoo.jpg');
+                        }
+                    }
+                </style>
+                <div align="center" id="textologomenu">
+                    <img  onClick="location.href='home.html'" src="./imagenes/Logo_isotipo.svg" style="max-width: 200px;"/>
+                </div>
+                <div class="topnav" id="myTopnav" style="width: 100%; display: flex; justify-content: center;">
+                    <div class="topnav-centered">
+                        <a style="visibility: hidden;" href="#Inicio"></a>
+                        <a href="#Inicio" onClick="location.href='home.html'">Inicio</a>
+                        <a href="#nosotros" onClick="location.href='nosotros.html'">El Santo</a>
+                        <a href="#locales" onClick="location.href='locales.html'">Locales</a>
+                        <a href="#galeria" onClick="location.href='galeria.html'">Galería</a>
+                        <a href="#Contacto" class="active" onClick="location.href='contacto.html'">Contacto</a>
+                        <a href="https://www.instagram.com/sanpompin.tlx/?hl=es-la" target="_blank" style="color:white;">    
+                            @sanpompin.tlx
+                        </a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- responsive top menu -->
+            <script>
+                /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+                function myFunction() {
+                  var x = document.getElementById("myTopnav");
+                  if (x.className === "topnav") {
+                    x.className += " responsive";
+                  } else {
+                    x.className = "topnav";
+                  }
+                }
+            </script>
+
+            <!-- primer header -->
+            <br><br><br>
+
+            <style>
+
+h1 {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #06D85F;
+  margin: 80px 0;
+}
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #333;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+            </style>
+
+            <!-- Image Map Generated by http://www.image-map.net/ -->
+            <div class="container" align="center">
+                <img src="./imagenes/home/mapas/PNGsMapeo/Chicas/Jun2022_planta bajajpg.png" usemap="#image-map" style="max-width: 100%;">
+            </div>
+
+            <map name="image-map">
+                <area target="_self" alt="ElCubanito" title="ElCubanito" href="#POPUP89" class="overlay" coords="163,19,163,59,170,77,189,88,329,88,329,20" shape="poly">
+                <area target="_self" alt="DulcePecado" title="DulcePecado" href="#popupDP" class="overlay" coords="418,21,417,88,500,91,501,20" shape="poly">
+                <area target="_self" alt="HotBurguerRest" title="HotBurguerRest" href="#popupHB" class="overlay" coords="505,19,504,90,585,89,585,19" shape="poly">
+                <area target="_self" alt="CriolloRest" title="CriolloRest" href="#popupCrRest" class="overlay" coords="591,20,590,88,672,89,672,21" shape="poly">
+                <area target="_self" alt="PolleriaT" title="PolleriaT" href="#popupPollT" class="overlay" coords="675,20,675,90,756,89,755,21" shape="poly">
+                <area target="_self" alt="ChoripApi" title="ChoripApi" href="#popupChAp" class="overlay" coords="802,21,801,89,883,88,884,20" shape="poly">
+                <area target="_self" alt="PastelriaRico" title="PastelriaRico" href="#popupPastR" class="overlay" coords="162,203,289,205,289,170,281,153,261,141,193,139,180,145,165,162" shape="poly">
+                <area target="_self" alt="MariscosSS" title="MariscosSS" href="#popupMarSS" class="overlay" coords="334,140,398,140,396,352,332,352" shape="poly">
+                <area target="_self" alt="GorditasRest" title="GorditasRest" href="#popupGdtRst" class="overlay" coords="401,139,467,141,485,149,496,167,497,244,400,243" shape="poly">
+                <area target="_self" alt="GpoCamicoDz" title="GpoCamicoDz" href="#popupGCDz" class="overlay" coords="602,172,603,243,699,243,698,140,629,139,613,150" shape="poly">
+                <area target="_self" alt="BotanicaTRB" title="BotanicaTRB" href="#popupBTRB" class="overlay" coords="702,141,702,245,763,243,766,139" shape="poly">
+                <area target="_self" alt="FloreriaT" title="FloreriaT" href="#popupFlorT" class="overlay" coords="802,138,802,217,883,216,882,138" shape="poly">
+                <area target="_self" alt="Pg199Cafe" title="Pg199Cafe" href="#popupP199C" class="overlay" coords="162,290,163,324,172,341,188,351,253,352,270,347,282,337,290,320,288,288" shape="poly">
+                <area target="_self" alt="CafeCPrns" title="CafeCPrns" href="#popupCafeCPr" class="overlay" coords="404,249,401,350,468,354,486,342,498,321,498,249" shape="poly">
+                <area target="_self" alt="FyVlaCentral" title="FyVlaCentral" href="#popupFVC" class="overlay" coords="602,249,602,326,618,345,638,352,697,351,698,248" shape="poly">
+                <area target="_self" alt="MoctezumaBar" title="MoctezumaBar" href="#popupMctB" class="overlay" coords="701,248,701,353,766,353,765,249" shape="poly">
+                <area target="_self" alt="CevicheriaEMM" title="CevicheriaEMM" href="#popupCvchEMM" class="overlay" coords="163,424,162,467,243,467,243,395,192,395,175,404" shape="poly">
+                <area target="_self" alt="AbolengoA" title="AbolengoA" href="#popupAblngA" class="overlay" coords="334,395,501,396,499,467,333,466" shape="poly">
+                <area target="_self" alt="BrindisPanaderia" title="BrindisPanaderia" href="#popupBrndsPan" class="overlay" coords="505,396,587,396,587,464,505,464" shape="poly">
+                <area target="_self" alt="HL55Creperia" title="HL55Creperia" href="#popupHL55" class="overlay" coords="591,395,673,395,673,466,589,465" shape="poly">
+                <area target="_self" alt="HeladosChalco" title="HeladosChalco" href="#popupHeladoCh" class="overlay" coords="675,395,756,395,756,466,676,465" shape="poly">
+            </map>
+
+            <div id="POPUP89" class="overlay">
+                <div class="popup">
+                    <h2 style="font-weight: 700;">EL CUBANITO</h2>
+                    <h3>TIENDA</h3>
+                    <div class="container" align="center">
+                        <img style="max-width: 200px;" src="/imagenes/Locales/Logos/PlantaBaja/ElCubanito.png" />
+                    </div>
+                    <br>
+                    <div class="container" align="center">
+                        <button type="submit" onclick="window.location.href = 'home.html#ElSantoEstaListo'" class="button">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="popupDP" class="overlay">
+                <div class="popup" style="background-color: #F7F7F7;">
+                    <h2 style="font-weight: 700;">DULCE PECADO</h2>
+                    <h3>TIENDA</h3>
+                    <div class="container" align="center">
+                        <img style="max-width: 200px;" src="/imagenes/Locales/Logos/PlantaBaja/DulcePecado.png" />
+                    </div>
+                    <br>
+                    <div class="container" align="center">
+                        <button type="submit" onclick="window.location.href = 'home.html#ElSantoEstaListo'" class="button">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="popupHB" class="overlay">
+                <div class="popup">
+                    <h2 style="font-weight: 700;">HOT BURGUER</h2>
+                    <h3>RESTAURANTE</h3>
+                    <div class="container" align="center">
+                        <img style="max-width: 200px;" src="/imagenes/Locales/Logos/PlantaBaja/HotBurg.png" />
+                    </div>
+                    <br>
+                    <div class="container" align="center">
+                        <button type="submit" onclick="window.location.href = 'home.html#ElSantoEstaListo'" class="button">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br>
+            
+            <footer class="container-fluid white py-5" style="background: #53733B;cursor: default;color:white;">
+                <div class="row" style="width:100%">
+                    <div class="col-md-2 pull-md-3">
+                        <div class="container" style="margin-left: 10px;">
+                            <p class="tituloFooter">Menú</p>
+                            <ul style="list-style-type:none;padding-inline-start: 10px;">
+                                <li> <a id="textosfooter" onClick="location.href='home.html'">Inicio</a> </li>
+                                <li> <a id="textosfooter" onClick="location.href='nosotros.html'">El Santo</a> </li>
+                                <li> <a id="textosfooter" onClick="location.href='locales.html'">Locales</a> </li>
+                                <li> <a id="textosfooter" onClick="location.href='galeria.html'">Galería</a> </li>
+                                <li> <a id="textosfooter" onClick="location.href='contacto.html'">Contacto</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pull-md-7">
+                        <div class="container">
+                            <p class="tituloFooter">Compañía</p>
+                            <ul style="list-style-type:none;padding-inline-start: 10px;">
+                                <li> <a id="textosfooter" onClick="location.href='TerminosYCondiciones.html'">Términos y condiciones</a> </li>
+                                <li> <a id="textosfooter" onClick="location.href='TerminosYCondiciones.html'">Aviso de privacidad</a> </li>
+                                <br>
+                                <li style="cursor: pointer;"> <img style="max-width:30px;" src="./imagenes/i-instagram.svg" onclick="window.open('https://www.instagram.com/sanpompin.tlx/?hl=es-la', '_blank');"/> <img style="max-width:30px;margin-left: 10px;" src="./imagenes/i_Facebook.svg" onclick="window.open('https://www.facebook.com/sanpompin/', '_blank');"/></li>
+                            </ul>
+                            <table>
+                                <tr>
+                                    <th>
+                                        <div class="container">
+                                           
+                                        </div>
+                                    </th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-7 push-md-2">
+                        <div class="container"align="right" style="float: right;">
+                            <img style="max-width:250px;" src="./imagenes/i_logotipo blanco.svg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="container" align="right">
+                    <p class="textofooterdeux">© 2022 San Pompin. Todos los derechos reservados. Diseñado por <a href="http://designdeux.com/" target="_blank" style="color:white;text-align: left;">DEUX® Diseño de experiencia</a></p>
+                </div>
+            </footer>
+    </body>
